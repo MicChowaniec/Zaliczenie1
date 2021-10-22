@@ -8,9 +8,10 @@ import org.openqa.selenium.WebDriver;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 
-        features = "src/test/Cucumber/features",
+        features = {"src/test/Cucumber/features/Task1.feature"},
         glue = {"steps"},
-        plugin = {"pretty","html:out"})
+        plugin = {"pretty","html:out"},
+        dryRun=false)
 
 public class Task1StepsTest
 {
